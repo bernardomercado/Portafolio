@@ -10,17 +10,24 @@ main{
             display: flex;
             justify-content:space-around;
             flex-wrap: wrap;
-            gap: 100px;
+            gap: 80px;
             width: 80%;
             margin: auto;
-            .tecnologias__logos__logo img{
-                width: 100px;
+            .tecnologias__logos__logo{
+                transition: transform 2s;
+                cursor: pointer;
+                &:hover{
+                    transform: rotate(360deg);
+                }
+                img{
+                    width: 100px;
+                }
+                p {
+                    font-weight: bold;
+                    text-align: center;
+                }
             }
-            .tecnologias__logos__logo p {
-                font-weight: bold;
-                text-align: center;
-            }
-        }
 
+        }
     }
 }
