@@ -1,0 +1,26 @@
+main{
+    .tecnologias{
+        .tecnologias__titulo{
+            font-size: 35px;
+            text-decoration: underline;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .tecnologias__logos{
+            display: flex;
+            justify-content:space-around;
+            flex-wrap: wrap;
+            gap: 100px;
+            width: 80%;
+            margin: auto;
+            .tecnologias__logos__logo img{
+                width: 100px;
+            }
+            .tecnologias__logos__logo p {
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+
+    }
+}

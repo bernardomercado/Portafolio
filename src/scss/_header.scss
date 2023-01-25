@@ -6,8 +6,9 @@ header{
     background-attachment: fixed;
     width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: center;
     .encabezado{
-        padding-top: 250px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -16,6 +17,10 @@ header{
             .encabezado__foto__img{
                 width: 200px;
                 border-radius: 50%;
+                transition: transform .5s;
+                &:hover{
+                    transform:scale(1.3);
+                }
             }
         }
         .encabezado__texto{

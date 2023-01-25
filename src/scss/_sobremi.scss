@@ -1,0 +1,32 @@
+main{
+    height: 100vh;
+    .sobremi{
+        text-align: center;
+        width: 80%;
+        border: 3px solid black;
+        border-radius: 50px;
+        margin: 200px auto;
+        padding: 10px 30px 30px;
+        box-shadow: 9px 10px 22px -8px rgba(0,0,0,0.75);
+        .sobremi__titulo{
+            padding-bottom: 10px;
+            text-decoration: underline;
+            font-size: 35px;
+        }
+        .sobremi__parrafo{
+            margin-bottom: 20px;
+        }
+        .sobremi__btn{
+            background-color: #023859;
+            text-decoration: none;
+            color: white;
+            padding: 10px 50px;
+            border-radius: 50px;
+            &:hover{
+                background-color: #071f2c;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
