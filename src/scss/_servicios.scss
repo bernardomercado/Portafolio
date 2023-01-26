@@ -1,0 +1,35 @@
+section{
+    h3{
+        font-size: 35px;
+        text-decoration: underline;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .servicios{
+        margin: 0 80px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 30px;
+        .servicios__servicio{
+            width: 350px;
+            background-color: #0238592a;
+            text-align: center;
+            border-radius: 15px;
+            padding: 20px;
+            transition: all 1s;
+            &:hover{
+                transform:translateY(-25px);
+                box-shadow: 4px 35px 29px -16px rgba(2,56,89,0.32);
+            }
+            .servicios__servicio__imagen{
+                .servicios__servicio__imagen__img{
+                    width: 100px;
+                    margin-bottom: 15px;
+                }
+            }
+            .servicios__servicio__titulo{
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
