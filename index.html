@@ -16,23 +16,23 @@
 <body>
     <nav class="menu">
         <section class="menu__container">
-            <h1 class="menu__logo">Portafolio</h1>
+            <a href="#seccion__header"><h1 class="menu__logo">Portafolio</h1></a>
 
             <div class="menu__hamburguer">
                 <i class="menu__img fa-solid fa-bars"></i>
             </div>
 
             <ul class="menu__links" id="hamburguer">
-                <li class="menu__item"><a class="menu__link" href="#">Sobre mí</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Servicios</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Portafolio</a></li>
+                <li class="menu__item"><a class="menu__link" href="#seccion__sobremi">Sobre mí</a></li>
+                <li class="menu__item"><a class="menu__link" href="#seccion__servicios">Servicios</a></li>
+                <li class="menu__item"><a class="menu__link" href="#seccion__proyectos">Proyectos</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Contacto</a></li>
             </ul>
         </section>
     </nav>
 
     <header>
-        <div class="encabezado">
+        <div class="encabezado" id="seccion__header">
             <div class="encabezado__foto">
                 <img class="encabezado__foto__img" src="./assets/image/foto-yo.png" alt="Bernardo José Mercado - Desarrollador Web">
             </div>
@@ -45,11 +45,10 @@
     </header>
 
     <main>
-            <div class="sobremi">
-                <h3 class="sobremi__titulo">Sobre mí</h3>
-                <p class="sobremi__parrafo">Soy un desarrollador web profesional y estoy aquí para ayudarte a crear una presencia en línea impresionante para tu negocio o marca personal. Mis servicios incluyen diseño y desarrollo de sitios web personalizados, desarrollo de sitios web de comercio electrónico, optimización para motores de búsqueda (SEO), diseño y desarrollo de aplicaciones web, e integración con redes sociales y otras plataformas</p>
-                <a class="sobremi__btn" href="#">Contactar</a>
-            </div>
+        <div class="sobremi" id="seccion__sobremi">
+            <h3 class="sobremi__titulo">Sobre mí</h3>
+            <p class="sobremi__parrafo">Soy un desarrollador web profesional y estoy aquí para ayudarte a crear una presencia en línea impresionante para tu negocio o marca personal. Mis servicios incluyen diseño y desarrollo de sitios web personalizados, desarrollo de sitios web de comercio electrónico, optimización para motores de búsqueda (SEO), diseño y desarrollo de aplicaciones web, e integración con redes sociales y otras plataformas</p>
+            <a class="sobremi__btn" href="#">Contactar</a>
         </div>
         <div class="tecnologias">
             <h3 class="tecnologias__titulo">Tecnologías que manejo</h3>
@@ -85,7 +84,7 @@
             </div>
         </div>
 
-        <section class="mis__servicios">
+        <section class="mis__servicios" id="seccion__servicios">
             <h3>Servicios</h3>
             <div class="servicios">
                 <div class="servicios__servicio">
@@ -118,7 +117,6 @@
                 </div>
             </div>
         </section>
-    </main>
 
     <footer>
         <p>Copyright 2023 / Portafolio Bernardo José Mercado - Desarrollador Web -</p>

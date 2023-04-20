@@ -43,6 +43,16 @@
 .menu .menu__container .menu__links .menu__item .menu__link:hover {
   background-color: rgba(166, 155, 3, 0.6784313725);
 }
+.menu .menu__container a {
+  text-decoration: none;
+  color: #fff;
+}
+.menu .menu__container a .menu__logo {
+  cursor: pointer;
+}
+.menu .menu__container a .menu__logo:hover {
+  color: rgba(166, 155, 3, 0.6784313725);
+}
 .menu .menu__container .menu__links--show {
   transform: unset;
   width: 100%;
@@ -51,13 +61,18 @@
   height: 100%;
   display: none;
   align-items: center;
-  padding: 0 15px;
   cursor: pointer;
   display: none;
 }
 .menu .menu__container .menu__hamburguer .menu__img {
   display: block;
-  width: 36px;
+  padding: 0 10px;
+}
+.menu .menu__container .menu__hamburguer .menu__img:hover {
+  border: 2px solid rgba(166, 155, 3, 0.6784313725);
+  color: rgba(166, 155, 3, 0.6784313725);
+  padding: 7px;
+  border-radius: 5px;
 }
 
 @media (max-width: 800px) {
