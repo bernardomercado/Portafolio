@@ -1,4 +1,5 @@
-section{
+.mis__servicios{
+    padding-bottom: 50px;
     h3{
         font-size: 35px;
         text-decoration: underline;
@@ -8,10 +9,12 @@ section{
     .servicios{
         margin: 0 80px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        flex-wrap: wrap;
         gap: 30px;
         .servicios__servicio{
             width: 350px;
+            min-height: 380px;
             background-color: #0238592a;
             text-align: center;
             border-radius: 15px;

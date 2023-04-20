@@ -8,28 +8,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/image/icono.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/CSS/style.css">
-    <title>Bernardo José Mercado - Desarrollador Web</title>
+    <title>Desarrollador Web - Bernardo José Mercado</title>
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="navbar__logo">
-            <img class="navar__logo__img" src="./assets/image/logo.png" alt="Logo Desarrollador Web">
-        </div>
-        <ul class="navbar__navegador">
-            <li class="navbar__navegador__item"><a href="">Sobre mi</a></li>
-            <li class="navbar__navegador__item"><a href="">Servicios</a></li>
-            <li class="navbar__navegador__item"><a href="">Portafolio</a></li>
-            <li class="navbar__navegador__item"><a href="">Contacto</a></li>
-        </ul>
+    <nav class="menu">
+        <section class="menu__container">
+            <h1 class="menu__logo">Portafolio</h1>
+
+            <div class="menu__hamburguer">
+                <i class="menu__img fa-solid fa-bars"></i>
+            </div>
+
+            <ul class="menu__links" id="hamburguer">
+                <li class="menu__item"><a class="menu__link" href="#">Sobre mí</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Servicios</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Portafolio</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Contacto</a></li>
+            </ul>
+        </section>
     </nav>
+
     <header>
         <div class="encabezado">
             <div class="encabezado__foto">
                 <img class="encabezado__foto__img" src="./assets/image/foto-yo.png" alt="Bernardo José Mercado - Desarrollador Web">
             </div>
             <div class="encabezado__texto">
+                <p class="encabezado__texto__saludo"> Hola, soy</p>
                 <h1 class="encabezado__texto__nombre">Bernardo José Mercado</h1>
                 <h2 class="encabezado__texto__titulo">Desarrollador Web</h2>
             </div>
@@ -39,8 +47,7 @@
     <main>
             <div class="sobremi">
                 <h3 class="sobremi__titulo">Sobre mí</h3>
-                <p class="sobremi__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea reprehenderit architecto praesentium odio fugiat, recusandae dignissimos illo possimus earum, quia veritatis quis. Sapiente in excepturi dolor enim dicta! Corporis, culpa?
-                </p>
+                <p class="sobremi__parrafo">Soy un desarrollador web profesional y estoy aquí para ayudarte a crear una presencia en línea impresionante para tu negocio o marca personal. Mis servicios incluyen diseño y desarrollo de sitios web personalizados, desarrollo de sitios web de comercio electrónico, optimización para motores de búsqueda (SEO), diseño y desarrollo de aplicaciones web, e integración con redes sociales y otras plataformas</p>
                 <a class="sobremi__btn" href="#">Contactar</a>
             </div>
         </div>
@@ -54,6 +61,10 @@
                 <div class="tecnologias__logos__logo">
                     <img src="./assets/image/css.png" alt="CSS">
                     <p>CSS</p>
+                </div>
+                <div class="tecnologias__logos__logo">
+                    <img src="./assets/image/javascript.svg" alt="JavaScript">
+                    <p>JavaScript</p>
                 </div>
                 <div class="tecnologias__logos__logo">
                     <img src="./assets/image/sass.png" alt="SASS">
@@ -74,7 +85,7 @@
             </div>
         </div>
 
-        <section>
+        <section class="mis__servicios">
             <h3>Servicios</h3>
             <div class="servicios">
                 <div class="servicios__servicio">
@@ -82,32 +93,37 @@
                         <img class="servicios__servicio__imagen__img" src="./assets/image/desarrollo-sitio-web.svg" alt="Desarrollo Sitio Web">
                     </div>
                     <h4 class="servicios__servicio__titulo">Desarrollo tu sitio web a medida</h4>
-                    <p class="servicios__servicio__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam vel accusamus consequuntur consectetur eum eius aspernatur recusandae quidem laudantium culpa officia, quam corporis veritatis, deserunt cumque explicabo repellendus qui optio.</p>
+                    <p class="servicios__servicio__parrafo">Puedo ayudarte a crear un sitio web personalizado para tu negocio o proyecto. Esto incluye desde la planificación inicial, diseño, desarrollo y puesta en marcha del sitio web.</p>
                 </div>
                 <div class="servicios__servicio">
                     <div class="servicios__servicio__imagen">
                         <img class="servicios__servicio__imagen__img" src="./assets/image/mantenimiento-sitio-web.svg" alt="Desarrollo Sitio Web">
                     </div>
                     <h4 class="servicios__servicio__titulo">Mantenimiento de sitio web</h4>
-                    <p class="servicios__servicio__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam vel accusamus consequuntur consectetur eum eius aspernatur recusandae quidem laudantium culpa officia, quam corporis veritatis, deserunt cumque explicabo repellendus qui optio.</p>
+                    <p class="servicios__servicio__parrafo">Si ya tienes un sitio web, puedo proporcionar servicios de mantenimiento y actualización para asegurarnos de que el sitio web esté funcionando correctamente y siempre actualizado.</p>
                 </div>
                 <div class="servicios__servicio">
                     <div class="servicios__servicio__imagen">
                         <img class="servicios__servicio__imagen__img" src="./assets/image/optimizacion-sitio-web.svg" alt="Desarrollo Sitio Web">
                     </div>
                     <h4 class="servicios__servicio__titulo">Optimiazación de sitio web</h4>
-                    <p class="servicios__servicio__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam vel accusamus consequuntur consectetur eum eius aspernatur recusandae quidem laudantium culpa officia, quam corporis veritatis, deserunt cumque explicabo repellendus qui optio.</p>
+                    <p class="servicios__servicio__parrafo"> Puedo ayudarte a optimizar tu sitio web para garantizar una mejor experiencia de usuario y un mejor posicionamiento en los motores de búsqueda.</p>
                 </div>
-    
-    
+                <div class="servicios__servicio">
+                    <div class="servicios__servicio__imagen">
+                        <img class="servicios__servicio__imagen__img" src="./assets/image/responsive.svg" alt="Sitio Web Responsive">
+                    </div>
+                    <h4 class="servicios__servicio__titulo">Desarrollo de sitio web responsive</h4>
+                    <p class="servicios__servicio__parrafo">Puedo desarrollar un sitio web responsive que se adapte a cualquier tamaño de pantalla para garantizar una experiencia de usuario óptima en cualquier dispositivo.</p>
+                </div>
             </div>
         </section>
-
-
     </main>
 
     <footer>
+        <p>Copyright 2023 / Portafolio Bernardo José Mercado - Desarrollador Web -</p>
     </footer>
     
+    <script src="./js/main.js"></script>
 </body>
 </html>

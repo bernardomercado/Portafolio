@@ -1,28 +1,87 @@
-.navbar{
-    width: 100%;
-    min-height: 50px;
-    background-color: #0d1a268a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 50px;
+.menu{
+    background-color: #0d1a26;
+    color: #fff;
+    height: 70px;
     position: fixed;
-    .navar__logo__img{
-        width: 50px;
-        height: 30px;
-    }
-    .navbar__navegador{
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    .menu__container{
         display: flex;
-        .navbar__navegador__item{
-            list-style: none;
-             a{
-                text-decoration: none;
-                color: #fff;
-                padding: 15px;
-                transition: .5s;
-                &:hover{
-                    background-color: #a69b03ad;
-                    font-weight: bold;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        max-width: 1300px;
+        height: 100%;
+        margin: 0 auto;
+        .menu__links{
+            height: 100%;
+            display: flex;
+            .menu__item{
+                list-style: none;
+                height: 100%;
+                .menu__link{
+                    color: #fff;
+                    text-decoration: none;
+                    padding: 0 30px;
+                    display: flex;
+                    height: 100%;
+                    align-items: center;
+                    &:hover{
+                        background-color: #a69b03ad;
+                    }
+                }
+            }
+        }
+        .menu__links--show {
+            transform: unset;
+            width: 100%;
+        }
+        .menu__hamburguer{
+            height: 100%;
+            display: none;
+            align-items: center;
+            padding: 0 15px;
+            cursor: pointer;
+            display: none;
+            .menu__img{
+                display: block;
+                width: 36px;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .menu{
+        .menu__container{
+            .menu__hamburguer{
+                display: flex;
+                .menu__img{
+                    font-size: 26px;
+                }
+            }
+            .menu__links{
+                display: none;
+            }
+            .menu__links--show{
+                position: fixed;
+                width: 100%;
+                max-width: 400px;
+                top: 70px;
+                bottom: 0;
+                right: 0;
+                background-color: #0d1a26;
+                overflow-y: auto;
+                display: grid;
+                grid-auto-rows: max-content;
+                .menu__item{
+                    .menu__link{
+                        padding: 25px 0;
+                        padding-left: 30px;
+                        height: auto;
+                    }
                 }
             }
         }

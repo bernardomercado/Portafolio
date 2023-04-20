@@ -27,8 +27,47 @@ header{
         .encabezado__texto{
             color: #fff;
             padding-left: 50px;
+            .encabezado__texto__saludo{
+                font-size: 20px;
+            }
             .encabezado__texto__titulo{
                 font-style: italic;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px){
+    header{
+        .encabezado{
+            flex-direction: column;
+            .encabezado__foto{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 470px){
+    header{
+        .encabezado{
+            .encabezado__foto{
+                .encabezado__foto__img{
+                    width: 150px;
+                    margin-bottom: 50px;
+                }
+            }
+            .encabezado__texto{
+                padding-left: 0;
+                .encabezado__texto__saludo{
+                    font-size: 17px;
+                }
+                .encabezado__texto__nombre{
+                    font-size: 25px;
+                }
+                .encabezado__texto__titulo{
+                    font-size: 20px;
+                }
             }
         }
     }
