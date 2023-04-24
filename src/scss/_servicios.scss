@@ -1,20 +1,20 @@
 .mis__servicios{
-    padding-bottom: 50px;
+    background-color: #ececec;
+    padding: 80px 10px 100px 10px;
     h3{
         font-size: 35px;
         text-decoration: underline;
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
     .servicios{
-        margin: 0 80px;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 40px;
         .servicios__servicio{
             width: 350px;
-            min-height: 380px;
+            min-height: 350px;
             background-color: #0238592a;
             text-align: center;
             border-radius: 15px;
