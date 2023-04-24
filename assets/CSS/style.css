@@ -123,11 +123,7 @@ header .encabezado {
 header .encabezado .encabezado__foto .encabezado__foto__img {
   width: 200px;
   border-radius: 50%;
-  transition: transform 0.5s;
   cursor: pointer;
-}
-header .encabezado .encabezado__foto .encabezado__foto__img:hover {
-  transform: scale(1.3);
 }
 header .encabezado .encabezado__texto {
   color: #fff;
@@ -150,8 +146,7 @@ header .encabezado .encabezado__texto .encabezado__texto__titulo {
 }
 @media (max-width: 470px) {
   header .encabezado .encabezado__foto .encabezado__foto__img {
-    width: 150px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   header .encabezado .encabezado__texto {
     padding-left: 0;
