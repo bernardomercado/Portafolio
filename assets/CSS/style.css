@@ -172,7 +172,7 @@ main .sobremi .sobremi__titulo {
 }
 main .sobremi .sobremi__contenedor {
   display: flex;
-  gap: 40px;
+  gap: 50px;
   margin: 50px;
 }
 main .sobremi .sobremi__contenedor .sobremi__texto {
@@ -330,4 +330,14 @@ main .sobremi .contenedor__btn .sobremi__btn:hover {
   text-transform: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 850px) {
+  .footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer .container p {
+    padding-bottom: 10px;
+  }
 }

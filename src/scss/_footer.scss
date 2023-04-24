@@ -39,3 +39,16 @@
         }
     }
 }
+
+@media(max-width: 850px){
+    .footer{
+        .container{
+            flex-direction: column;
+            text-align: center;
+            p{
+                padding-bottom: 10px;
+            }
+        }
+
+    }
+}
