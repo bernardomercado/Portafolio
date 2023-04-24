@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/image/icono.ico.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/CSS/style.css">
     <title>Desarrollador Web - Bernardo José Mercado</title>
 </head>
@@ -33,10 +34,10 @@
 
     <header>
         <div class="encabezado" id="seccion__header">
-            <div class="encabezado__foto">
+            <div class="encabezado__foto" data-aos="fade-right"  data-aos-duration="2500">
                 <img class="encabezado__foto__img" src="assets/image/foto-yo.png" alt="Bernardo José Mercado - Desarrollador Web">
             </div>
-            <div class="encabezado__texto">
+            <div class="encabezado__texto" data-aos="fade-left"  data-aos-duration="2500">
                 <p class="encabezado__texto__saludo"> Hola, soy</p>
                 <h1 class="encabezado__texto__nombre">Bernardo José Mercado</h1>
                 <h2 class="encabezado__texto__titulo">Desarrollador Web</h2>
@@ -45,44 +46,59 @@
     </header>
 
     <main>
-        <div class="sobremi" id="seccion__sobremi">
+        <section class="sobremi" id="seccion__sobremi">
             <h3 class="sobremi__titulo">Sobre mí</h3>
-            <p class="sobremi__parrafo">Soy un desarrollador web profesional y estoy aquí para ayudarte a crear una presencia en línea impresionante para tu negocio o marca personal. Mis servicios incluyen diseño y desarrollo de sitios web personalizados, desarrollo de sitios web de comercio electrónico, optimización para motores de búsqueda (SEO), diseño y desarrollo de aplicaciones web, e integración con redes sociales y otras plataformas</p>
-            <a class="sobremi__btn" href="#">Contactar</a>
-        </div>
-        <div class="tecnologias">
-            <h3 class="tecnologias__titulo">Tecnologías que manejo</h3>
-            <div class="tecnologias__logos">
-                <div class="tecnologias__logos__logo">
-                    <img src="./assets/image/html.png" alt="HTML">
-                    <p>HTML</p>
+            <div class="sobremi__contenedor">
+                <div class="sobremi__texto">
+                    <h4 class="sobremi__subtitulo">¿A qué me dedico?</h4>
+                    <p class="sobremi__parrafo">Soy un desarrollador web profesional y estoy aquí para ayudarte a crear un sitio web para tu negocio o marca personal. 
+                    <p class="sobremi__parrafo">Mi objetivo es crear sitios web atractivos, dinámicos, responsivos, y optimizados por los motores de búsqueda que cumplan con las necesidades y expectativas de mis clientes.</p>
+                    <p class="sobremi__parrafo">Me mantengo actualizado con las últimas tendencias y tencologías para brindar soluciones innovadoras que marquen la diferencia.</p>
+                    <p class="sobremi__parrafo">Si estás buscando un desarrollador web que pueda llevar tu sitio web al siguiente nivel, no dudes en contactarme.</p>
+                    <p class="sobremi__parrafo"></p> 
                 </div>
-                <div class="tecnologias__logos__logo">
-                    <img src="./assets/image/css.png" alt="CSS">
-                    <p>CSS</p>
+
+                <div class="sobremi__tecnologias">
+                    <h4 class="tecnologias__subtitulo">Algunas de las tecnologías que manejo:</h4>
+                    <div class="tecnologias__logos">
+                        <div class="tecnologias__logos__logo">
+                            <img src="./assets/image/html.png" alt="HTML">
+                            <p>HTML</p>
+                        </div>
+                        <div class="tecnologias__logos__logo">
+                            <img src="./assets/image/css.png" alt="CSS">
+                            <p>CSS</p>
+                        </div>
+                        <div class="tecnologias__logos__logo">
+                            <img src="./assets/image/javascript.svg" alt="JavaScript">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="tecnologias__logos__logo">
+                            <img src="./assets/image/sass.png" alt="SASS">
+                            <p>SASS</p>
+                        </div>
+                        <div class="tecnologias__logos__logo">
+                            <img src="./assets/image/bootstrap.png" alt="Bootstrap">
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="tecnologias__logos__logo">
+                            <img src="./assets/image/git.png" alt="Git">
+                            <p>Git</p>
+                        </div>
+                        <div class="tecnologias__logos__logo">
+                            <img src="./assets/image/github.png" alt="Github">
+                            <p>Github</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="tecnologias__logos__logo">
-                    <img src="./assets/image/javascript.svg" alt="JavaScript">
-                    <p>JavaScript</p>
-                </div>
-                <div class="tecnologias__logos__logo">
-                    <img src="./assets/image/sass.png" alt="SASS">
-                    <p>SASS</p>
-                </div>
-                <div class="tecnologias__logos__logo">
-                    <img src="./assets/image/bootstrap.png" alt="Bootstrap">
-                    <p>Bootstrap</p>
-                </div>
-                <div class="tecnologias__logos__logo">
-                    <img src="./assets/image/git.png" alt="Git">
-                    <p>Git</p>
-                </div>
-                <div class="tecnologias__logos__logo">
-                    <img src="./assets/image/github.png" alt="Github">
-                    <p>Github</p>
-                </div>
+            </div> 
+
+            <div class="contenedor__btn">
+                <a class="sobremi__btn" href="#">Contactar</a>
             </div>
-        </div>
+
+        </section>
+        
 
         <section class="mis__servicios" id="seccion__servicios">
             <h3>Servicios</h3>
@@ -123,5 +139,9 @@
     </footer>
     
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

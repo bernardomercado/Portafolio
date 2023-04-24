@@ -1,31 +1,100 @@
 main{
     .sobremi{
-        text-align: center;
-        width: 80%;
-        border: 3px solid black;
-        border-radius: 50px;
-        margin: 150px auto;
-        padding: 10px 30px 30px;
-        box-shadow: 9px 10px 22px -8px rgba(0,0,0,0.75);
+        margin-top: 100px;
         .sobremi__titulo{
-            padding-bottom: 10px;
+            text-align: center;
             text-decoration: underline;
             font-size: 35px;
         }
-        .sobremi__parrafo{
-            margin-bottom: 20px;
+        .sobremi__contenedor{
+            display: flex;
+            gap: 40px;
+            margin: 50px;
+            .sobremi__texto{
+                flex: 1;
+                .sobremi__subtitulo{
+                    font-size: 25px;
+                    margin-bottom: 30px;
+                }
+                .sobremi__parrafo{
+                    text-align: justify;
+                    margin-bottom: 20px;
+                    line-height: 25px;
+                }
+            }
+            .sobremi__tecnologias{
+                flex: 1;
+                .tecnologias__subtitulo{
+                    font-size: 25px;
+                    margin-bottom: 30px;
+                }
+                .tecnologias__logos{
+                    display: flex;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    gap: 30px;
+                    .tecnologias__logos__logo{
+                        transition: transform 2s;
+                        cursor: pointer;
+                        &:hover{
+                            transform: rotate(360deg);
+                        }
+                        img{
+                            width: 90px;
+                        }
+                    }
+                }
+            }
         }
-        .sobremi__btn{
-            background-color: #023859;
-            text-decoration: none;
-            color: white;
-            padding: 10px 50px;
-            border-radius: 50px;
-            &:hover{
-                background-color: #071f2c;
-                font-weight: bold;
+        .contenedor__btn{
+            text-align: center;
+            .sobremi__btn{
+                display:inline-block;
+                background-color: #023859;
+                text-decoration: none;
+                color: white;
+                padding: 10px 100px;
+                border-radius: 10px;
+                margin-bottom: 100px;
+                &:hover{
+                    background-color: #071f2c;
+                }
             }
         }
     }
 }
 
+@media(max-width: 900px){
+    .sobremi{
+        .sobremi__contenedor{
+            flex-direction: column;
+            .sobremi__texto{
+                .sobremi__subtitulo{
+                    text-align: center;
+                }
+            }
+            .sobremi__tecnologias{
+                .tecnologias__subtitulo{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+/*
+}
+@media(max-width: 880px){
+    .sobremi__tecnologias{
+        align-items: center;
+        flex-direction: column;
+        .sobremi{
+            width: 100%;
+            margin: 10px;
+            .sobremi__titulo{
+                text-align: center;
+            }
+        }
+    }
+}
+*/

@@ -113,6 +113,7 @@ header {
   height: 100vh;
   display: flex;
   justify-content: center;
+  padding-bottom: 70px;
 }
 header .encabezado {
   display: flex;
@@ -162,66 +163,96 @@ header .encabezado .encabezado__texto .encabezado__texto__titulo {
   }
 }
 main .sobremi {
-  text-align: center;
-  width: 80%;
-  border: 3px solid black;
-  border-radius: 50px;
-  margin: 150px auto;
-  padding: 10px 30px 30px;
-  box-shadow: 9px 10px 22px -8px rgba(0, 0, 0, 0.75);
+  margin-top: 100px;
 }
 main .sobremi .sobremi__titulo {
-  padding-bottom: 10px;
-  text-decoration: underline;
-  font-size: 35px;
-}
-main .sobremi .sobremi__parrafo {
-  margin-bottom: 20px;
-}
-main .sobremi .sobremi__btn {
-  background-color: #023859;
-  text-decoration: none;
-  color: white;
-  padding: 10px 50px;
-  border-radius: 50px;
-}
-main .sobremi .sobremi__btn:hover {
-  background-color: #071f2c;
-  font-weight: bold;
-}
-
-main .tecnologias {
-  margin-bottom: 150px;
-}
-main .tecnologias .tecnologias__titulo {
-  font-size: 35px;
-  text-decoration: underline;
   text-align: center;
+  text-decoration: underline;
+  font-size: 35px;
+}
+main .sobremi .sobremi__contenedor {
+  display: flex;
+  gap: 40px;
+  margin: 50px;
+}
+main .sobremi .sobremi__contenedor .sobremi__texto {
+  flex: 1;
+}
+main .sobremi .sobremi__contenedor .sobremi__texto .sobremi__subtitulo {
+  font-size: 25px;
   margin-bottom: 30px;
 }
-main .tecnologias .tecnologias__logos {
+main .sobremi .sobremi__contenedor .sobremi__texto .sobremi__parrafo {
+  text-align: justify;
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+main .sobremi .sobremi__contenedor .sobremi__tecnologias {
+  flex: 1;
+}
+main .sobremi .sobremi__contenedor .sobremi__tecnologias .tecnologias__subtitulo {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+main .sobremi .sobremi__contenedor .sobremi__tecnologias .tecnologias__logos {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 80px;
-  width: 80%;
-  margin: auto;
+  gap: 30px;
 }
-main .tecnologias .tecnologias__logos .tecnologias__logos__logo {
+main .sobremi .sobremi__contenedor .sobremi__tecnologias .tecnologias__logos .tecnologias__logos__logo {
   transition: transform 2s;
   cursor: pointer;
 }
-main .tecnologias .tecnologias__logos .tecnologias__logos__logo:hover {
+main .sobremi .sobremi__contenedor .sobremi__tecnologias .tecnologias__logos .tecnologias__logos__logo:hover {
   transform: rotate(360deg);
 }
-main .tecnologias .tecnologias__logos .tecnologias__logos__logo img {
-  width: 100px;
+main .sobremi .sobremi__contenedor .sobremi__tecnologias .tecnologias__logos .tecnologias__logos__logo img {
+  width: 90px;
 }
-main .tecnologias .tecnologias__logos .tecnologias__logos__logo p {
-  font-weight: bold;
+main .sobremi .contenedor__btn {
   text-align: center;
 }
+main .sobremi .contenedor__btn .sobremi__btn {
+  display: inline-block;
+  background-color: #023859;
+  text-decoration: none;
+  color: white;
+  padding: 10px 100px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+main .sobremi .contenedor__btn .sobremi__btn:hover {
+  background-color: #071f2c;
+}
 
+@media (max-width: 900px) {
+  .sobremi .sobremi__contenedor {
+    flex-direction: column;
+  }
+  .sobremi .sobremi__contenedor .sobremi__texto .sobremi__subtitulo {
+    text-align: center;
+  }
+  .sobremi .sobremi__contenedor .sobremi__tecnologias .tecnologias__subtitulo {
+    text-align: center;
+  }
+}
+/*
+}
+@media(max-width: 880px){
+    .sobremi__tecnologias{
+        align-items: center;
+        flex-direction: column;
+        .sobremi{
+            width: 100%;
+            margin: 10px;
+            .sobremi__titulo{
+                text-align: center;
+            }
+        }
+    }
+}
+*/
 .mis__servicios {
   padding-bottom: 50px;
 }
