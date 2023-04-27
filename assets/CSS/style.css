@@ -136,6 +136,24 @@ header .encabezado .encabezado__texto .encabezado__texto__saludo {
 header .encabezado .encabezado__texto .encabezado__texto__titulo {
   font-style: italic;
 }
+header #whatsapp-icon {
+  position: fixed;
+  bottom: -60px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: bottom 0.3s ease-in-out;
+}
 
 @media (max-width: 700px) {
   header .encabezado {
@@ -160,6 +178,10 @@ header .encabezado .encabezado__texto .encabezado__texto__titulo {
   }
   header .encabezado .encabezado__texto .encabezado__texto__titulo {
     font-size: 20px;
+  }
+  header #whatsapp-icon {
+    width: 50px;
+    height: 50px;
   }
 }
 main .sobremi {

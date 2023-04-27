@@ -43,3 +43,16 @@ body.addEventListener('click', (event) => {
     event.preventDefault(); // Evita que la página se recargue al hacer clic en el enlace
     window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza la página hacia arriba
   });
+
+
+// CREAR SCROLL PARA EL ICONO DE WHATSAPP
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("whatsapp-icon").style.bottom = "20px";
+   } else {
+      document.getElementById("whatsapp-icon").style.bottom = "-60px";
+   }
+}
