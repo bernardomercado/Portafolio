@@ -17,6 +17,17 @@ body.addEventListener('click', (event) => {
   }
 });
 
+// Obtener todos los enlaces dentro del menú
+const menuLinksItems = menuLinks.querySelectorAll('a');
+
+// Agregar un evento de clic a cada enlace dentro del menú
+menuLinksItems.forEach(link => {
+  link.addEventListener('click', () => {
+    // Remover la clase CSS 'menu__links--show' de la lista de enlaces del menú para cerrar el menú
+    menuLinks.classList.remove('menu__links--show');
+  });
+});
+
 // PARA QUE NO SE CARGUE LA PAGINA CUANDO HAGO CLICK EN UN LINK
 
   // Selecciona todos los enlaces de la lista de menú y el logo
