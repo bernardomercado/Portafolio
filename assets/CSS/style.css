@@ -385,6 +385,9 @@ main .sobremi .contenedor__btn .sobremi__btn:hover {
   .formulario .formulario__contenedor {
     width: 90%;
   }
+  .formulario .formulario__contenedor .form {
+    margin: 20px auto;
+  }
   .formulario .formulario__imagen i {
     font-size: 50px;
   }
