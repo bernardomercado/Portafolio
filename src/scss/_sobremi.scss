@@ -8,7 +8,7 @@ main{
         }
         .sobremi__contenedor{
             display: flex;
-            gap: 50px;
+            gap: 100px;
             margin: 50px;
             .sobremi__texto{
                 flex: 1;
@@ -68,6 +68,7 @@ main{
     .sobremi{
         .sobremi__contenedor{
             flex-direction: column;
+            gap: 50px !important;
             .sobremi__texto{
                 .sobremi__subtitulo{
                     text-align: center;
@@ -81,20 +82,3 @@ main{
         }
     }
 }
-
-/*
-}
-@media(max-width: 880px){
-    .sobremi__tecnologias{
-        align-items: center;
-        flex-direction: column;
-        .sobremi{
-            width: 100%;
-            margin: 10px;
-            .sobremi__titulo{
-                text-align: center;
-            }
-        }
-    }
-}
-*/

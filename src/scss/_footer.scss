@@ -22,7 +22,7 @@
                     &:hover{
                         color: #007bff;
                     }
-                    .fab {
+                    i {
                         display: inline-block;
                         font-size: 1.5rem;
                         font-weight: normal;
@@ -33,7 +33,27 @@
                         text-transform: none;
                         -webkit-font-smoothing: antialiased;
                         -moz-osx-font-smoothing: grayscale;
-                      }
+                    }
+                    .fa-whatsapp{
+                        &:hover{
+                            color: #00bb2d;
+                        }
+                    }
+                    .fa-linkedin{
+                        &:hover{
+                            color: #0e76a8;
+                        }
+                    } 
+                    .fa-envelope{
+                        &:hover{
+                            color: #000000;
+                        }
+                    } 
+                    .fa-github{
+                        &:hover{
+                            color: #171515;
+                        }
+                    } 
                 }
             }
         }
