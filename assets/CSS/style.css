@@ -185,6 +185,7 @@ header #whatsapp-icon {
   }
 }
 main .sobremi {
+  background-color: #ececec;
   padding-top: 80px;
 }
 main .sobremi .sobremi__titulo {
@@ -261,7 +262,7 @@ main .sobremi .contenedor__btn .sobremi__btn:hover {
   }
 }
 .mis__servicios {
-  background-color: #ececec;
+  background-color: #ffffff;
   padding: 80px 10px 100px 10px;
 }
 .mis__servicios h3 {
@@ -279,7 +280,7 @@ main .sobremi .contenedor__btn .sobremi__btn:hover {
 .mis__servicios .servicios .servicios__servicio {
   width: 350px;
   min-height: 350px;
-  background-color: rgba(2, 56, 89, 0.1647058824);
+  background-color: #ececec;
   text-align: center;
   border-radius: 15px;
   padding: 20px;
@@ -287,7 +288,7 @@ main .sobremi .contenedor__btn .sobremi__btn:hover {
 }
 .mis__servicios .servicios .servicios__servicio:hover {
   transform: translateY(-25px);
-  box-shadow: 4px 35px 29px -16px rgba(2, 56, 89, 0.32);
+  box-shadow: 4px 35px 29px -16px #e0dfdf;
 }
 .mis__servicios .servicios .servicios__servicio .servicios__servicio__imagen .servicios__servicio__imagen__img {
   width: 100px;
@@ -295,6 +296,42 @@ main .sobremi .contenedor__btn .sobremi__btn:hover {
 }
 .mis__servicios .servicios .servicios__servicio .servicios__servicio__titulo {
   margin-bottom: 15px;
+}
+
+.proyectos {
+  background-color: #ececec;
+  padding: 80px 10px 100px 10px;
+}
+.proyectos h3 {
+  font-size: 35px;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.proyectos .proyectos__contenedor {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.proyectos .proyectos__contenedor .proyecto {
+  max-width: 450px;
+  max-height: 380px;
+}
+.proyectos .proyectos__contenedor .proyecto img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 10px;
+}
+.proyectos .proyectos__contenedor .proyecto a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  cursor: pointer;
+}
+.proyectos .proyectos__contenedor .proyecto a:hover {
+  color: rgba(166, 155, 3, 0.6784313725);
 }
 
 .contacto .contacto__contenedor {
@@ -415,7 +452,7 @@ main .sobremi .contenedor__btn .sobremi__btn:hover {
   }
 }
 .footer {
-  background-color: #f8f8f8;
+  background-color: #ececec;
   padding: 20px 0;
 }
 .footer .container {

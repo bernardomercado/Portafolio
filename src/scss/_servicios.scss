@@ -1,5 +1,5 @@
 .mis__servicios{
-    background-color: #ececec;
+    background-color: #ffffff;
     padding: 80px 10px 100px 10px;
     h3{
         font-size: 35px;
@@ -15,14 +15,15 @@
         .servicios__servicio{
             width: 350px;
             min-height: 350px;
-            background-color: #0238592a;
+            background-color: #ececec;
             text-align: center;
             border-radius: 15px;
             padding: 20px;
             transition: all 1s;
             &:hover{
                 transform:translateY(-25px);
-                box-shadow: 4px 35px 29px -16px rgba(2,56,89,0.32);
+                box-shadow: 4px 35px 29px -16px #e0dfdf;
+                ;
             }
             .servicios__servicio__imagen{
                 .servicios__servicio__imagen__img{
